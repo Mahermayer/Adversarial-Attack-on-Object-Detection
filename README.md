@@ -30,9 +30,10 @@ Black-box attacks are usually less sample-efficient than white-box methods but o
 
 FGSM is a one-step white-box attack:
 
-\[
-x_{adv} = \text{clip}(x + \epsilon \cdot \text{sign}(\nabla_x L(\theta, x, y)))
-\]
+```text
+x_adv = clip(x + epsilon * sign(grad_x L(theta, x, y)))
+```
+
 
 Where:
 - `x` is the clean input image
@@ -129,25 +130,7 @@ Examples:
 - `epsilon=8/255` -> max ~8 levels
 - `epsilon=16/255` -> max ~16 levels
 
-## Remote Client Mode (Duckiebot)
 
-Run remote client launcher:
-
-```bash
-dts devel run -H <vehicle-name> -L remote_client
-```
-
-Specify server address:
-
-```bash
-GPU_SERVER_IP=<server-ip> GPU_SERVER_PORT=5001 dts devel run -H <vehicle-name> -L remote_client
-```
-
-Protocol summary:
-
-```text
-client -> server: img_size,vehicle,frame_id,t_gen\n + JPEG bytes
-server -> client: vehicle,frame_id,v,omega,t_server,aoi_server\n
 ```
 
 ## Scope and Intended Use
