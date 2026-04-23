@@ -1,4 +1,5 @@
-# Duckie Adversarial AI Server
+# Adversarial-Attack-on-Object-Detection in Duckietown
+
 
 Adversarial attack research repository for Duckietown perception.
 
