@@ -132,7 +132,6 @@ Examples:
 - `epsilon=16/255` -> max ~16 levels
 
 
-```
 
 ## Scope and Intended Use
 
