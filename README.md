@@ -61,7 +61,6 @@ So lane segmentation is currently **not** adversarially perturbed.
 - `lane_pipeline.py` - inference + control pipeline, FGSM integration point
 - `fgsm_yolov8.py` - FGSM attack module with YOLOv8 loss access
 - `packages/my_package/src/vehicle_client.py` - remote Duckiebot client
-- `packages/my_package/src/vehicle_local_inference.py` - local on-board inference node
 - `segmentation/` - lane segmentation models and training code
 - `ByteTrack/` - tracker implementation
 - `weight/` - runtime model weights
